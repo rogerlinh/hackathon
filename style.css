@@ -1,6 +1,97 @@
 * {
-    font-family: 'Lexend', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.header {
+  height: 65%;
+  background-image: url(./toolsBannerBlueLarge2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 100%;
+}
+
+.header img {
+  margin-left: 80%;
+  width: 250px;
+}
+.header .title-bmi {
+  color: white;
+  padding-left: 5%;
+  padding-right: 30%;
+  padding-top: 8%;
+  font-size: 20px;
+}
+#bmi {
+  margin: 0 20%;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+#input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+select#icon option[value="male"] {
+  background-image: url(./male-icon.jpg);
+}
+select#icon option[value="female"] {
+  background-image: url(./female-icon.jpg);
+}
+.inputData {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.heightNumber {
+  margin-top: 20px;
+}
+.weightNumber {
+  margin-top: 20px;
+}
+input {
+  width: 30vw;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  border: 0.1px solid gray;
+  transition: 0.5s;
+}
+input:focus {
+  background-color: rgb(153, 194, 255);
+  transition: 0.5s;
+}
+
+.btn {
+  margin: 5% 25% 10% 25%;
+  border-radius: 10px !important;
+  background-color: rgb(41, 126, 255) !important;
+  font-weight: bold !important;
+  color: white !important;
+  width: 15vw !important;
+  height: 4vh !important;
+  padding: 1px !important;
+}
+.tab-pane p {
+margin-top: 1% !important;
+}
+.tab-pane {
+    margin-bottom: 5% !important;
+    border: 1px solid gray ;
+    padding: 5px 10px 5px 10px;
+}
+.nav-link {
+    font-weight: bold;
+    border: 0.1px solid gray !important;
+    width: calc(100%/3);
+}
+.nav-link:focus {
+    background-color: rgb(1, 103, 255) !important;
+    color: white !important;
+transition: 0.6s;
+}
+
