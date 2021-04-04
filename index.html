@@ -1,29 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tính chỉ số BMI</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="header">          
-    <h1>Công cụ tính chỉ số BMI</h1>
-    <p>Chỉ số BMI còn được gọi là chỉ số khối lượng cơ thể (Body Mass Index). Dựa vào chỉ số BMI của một người có thể biết được người đó béo, gầy hay có cân nặng lý tưởng.</p>
-    <img class="background-img" src="/hackathon/toolsBannerBlueLarge2.png" alt="anh-nen">
-</div>
-    <div class="sex">
-        <div class= "male"></div>
-        <div class= "female"></div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div class="title-bmi">
+        <h1>Công cụ tính chỉ số BMI</h1>
+        <p>
+          Chỉ số BMI còn được gọi là chỉ số khối lượng cơ thể (Body Mass Index).
+          Dựa vào chỉ số BMI của một người có thể biết được người đó béo, gầy
+          hay có cân nặng lý tưởng.
+        </p>
+      </div>
+      <img class="scale" src="./toolsIconBmi.png" alt="scale" />
     </div>
-    <div class="inputNumber">
-        <div class="ageNumber"></div>
-        <div class="heightNumber"></div>
-        <div class="weightNumber"></div>
-        <button class="btn">Tính ngay</button>
+
+    <!--INPUT DATA-->
+    <div id="bmi">
+      <form id="input" action="">
+        <p style="font-weight: bold; text-align: left;">Giới tính của bạn</p>
+       
+        <select id="icon">
+          <option class="male">male</option>
+          <option class="female">female</option>
+        </select>
+
+
+        <div class="inputData">
+          <div class="inputNumber">
+            <div class="ageNumber">
+              <span>Bạn bao nhiêu tuổi? (năm)</span><br>
+              <input name="ageNumber" type="number" min="5" max="100" />
+            </div>
+            <div class="heightNumber">
+              <span>Bạn cao bao nhiêu? (cm)</span><br>
+              <input name="heightNumber" type="number" min="100" max="250" />
+            </div>
+            <div class="weightNumber">
+              <span>Cân nặng của bạn? (kg)</span><br>
+              <input name="weightNumber" type="number" min="10" max="200" />
+            </div>
+            <button class="btn">Tính ngay</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Tab panes -->
+
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Yếu tố ảnh hưởng đến cân nặng
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Ảnh hưởng của chỉ số BMI
+          </button>
+          <button
+            class="nav-link"
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Cách để có chỉ số BMI lý tưởng?
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <p>Một số yếu tố ảnh hưởng đến cân nặng của bạn, bao gồm:</p>
+          <ul>
+            <li>
+              Lượng calo dư thừa: Cơ thể cần bổ sung đủ calo để đáp ứng nhu cầu
+              năng lượng hàng ngày. Tuy nhiên, calo khi dư thừa sẽ được lưu trữ
+              dưới dạng chất béo. Bổ sung quá nhiều calo sẽ dẫn đến thừa cân,
+              béo phì.
+            </li>
+            <li>
+              Tuổi cao: Cân nặng của bạn thường sẽ tăng thêm một chút khi bạn
+              già đi.
+            </li>
+            <li>
+              Yếu tố về gen: Một số trường hợp bị rối loạn di truyền, dẫn đến
+              béo phì.
+            </li>
+            <li>
+              Quá trình mang thai: Trong thai kỳ, mẹ bầu thường sẽ tăng cân. Sau
+              khi sinh con, người phụ nữ thường không thể giảm cân về mức bình
+              thường như trước khi mang thai.
+            </li>
+          </ul>
+          <span>
+            Ngoài các yếu tố về cơ địa hay thai kỳ, bạn có thể chủ động kiểm
+            soát lượng calo nạp vào cơ thể hàng ngày để giữ cho chỉ số BMI ở mức
+            bình thường.
+          </span>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <span>
+            <p>
+              Chỉ số BMI tăng quá cao sẽ ảnh hưởng xấu đến sức khỏe và gây ra
+              nhiều bệnh lý nguy hiểm. Nhiều vấn đề sức khỏe nghiêm trọng có
+              liên quan đến tình trạng thừa cân hoặc béo phì, bao gồm:
+            </p>
+            <ul>
+              <li>Bệnh tim mạch</li>
+              <li>Bệnh tiểu đường</li>
+              <li>Bệnh về túi mật</li>
+              <li>
+                Nguy cơ gây ra một số loại ung thư, chẳng hạn như ung thư nội
+                mạc tử cung, ung thư vú, ung thư đại tràng và túi mật.
+              </li>
+              <li>
+                Ngoài ra, béo phì cũng có thể làm tăng nguy cơ ung thư buồng
+                trứng.
+              </li>
+              <li>Chứng ngưng thở khi ngủ</li>
+              <li>Bệnh về khớp</li>
+              <li>Vô sinh.</li>
+            </ul>
+          </span>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+          <p>
+            Để đạt được chỉ số BMI lý tưởng, bạn cần phải giảm cân. Việc giảm cân
+            đòi hỏi bạn phải sử dụng lượng calo nhiều hơn mức nạp vào. Bạn có
+            thể thực hiện điều này bằng cách luyện tập thể dục thường xuyên để
+            đốt cháy năng lượng dư thừa, kết hợp với chế độ ăn uống lành
+            mạnh.</p>
+          <span>
+            Tốt nhất, hãy đến gặp bác sĩ để có thể lên kế hoạch ăn uống cân
+            bằng, hợp lý và đảm bảo dinh dưỡng. Nếu cần thiết, bạn có thể nhanh
+            chóng đạt đến chỉ số BMI bình thường bằng các chế độ ăn kiêng nghiêm
+            ngặt, phối hợp với các bài tập thể dục đều đặn.
+          </span>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
