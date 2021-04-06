@@ -24,9 +24,84 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
   </head>
   <body>
+    <!--MENU-->
+    <section class="menu">
+      <h1><span> BMI </span> Caculator</h1>
+      <div class="menu_text">
+        <p onclick="showSearch()" id="search">Tìm kiếm thông tin</p>
+        <p>Liên Hệ</p>
+      </div>
+    </section>
+
+    <section class="search">
+      <img
+        onclick="closesearch()"
+        id="search_close"
+        src="./close.png"
+        alt=""
+        style="
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 15px;
+          right: 140px;
+          cursor: pointer;
+        "
+      />
+      <div class="search_content" style="margin-left: 100px">
+        <ul>
+          <li><a href="#">Bệnh tiêu hóa </a></li>
+          <li><a href="#">Chăm sóc giấc ngủ </a></li>
+          <li><a href="#">Mang thai </a></li>
+          <li><a href="#">Sức khỏe phụ nữ </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh tiêu hóa </a></li>
+          <li><a href="#">Chăm sóc giấc ngủ </a></li>
+          <li><a href="#">Mang thai </a></li>
+          <li><a href="#">Sức khỏe phụ nữ </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh tiêu hóa </a></li>
+          <li><a href="#">Chăm sóc giấc ngủ </a></li>
+          <li><a href="#">Mang thai </a></li>
+          <li><a href="#">Sức khỏe phụ nữ </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh tiêu hóa </a></li>
+          <li><a href="#">Chăm sóc giấc ngủ </a></li>
+          <li><a href="#">Mang thai </a></li>
+          <li><a href="#">Sức khỏe phụ nữ </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh tiêu hóa </a></li>
+          <li><a href="#">Chăm sóc giấc ngủ </a></li>
+          <li><a href="#">Mang thai </a></li>
+          <li><a href="#">Sức khỏe phụ nữ </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+    </section>
+
     <!--HEADER-->
     <div class="header">
       <div class="title-bmi">
@@ -41,29 +116,41 @@
     </div>
 
     <!--INPUT DATA-->
-    <div id="bmi">
+    <div id="bmi" class = "caculator">
       <form id="input1">
         <p style="font-weight: bold; text-align: left">Giới tính của bạn</p>
         <div id="gender">
-        <label for="male">
-          <input type="radio" name="male" id="male" value="1" checked />
-          <img id= "male-img" src="./male-icon.jpg" alt="" />
-        </label>
-        <label for="female">
-          <input type="radio" name="female" id="female" value="2"/>
-          <img id= "female-img" src="./female-icon.jpg" alt="" />
-        </label>
-      </div>
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="male" />
+            <img id="male-img" src="./male-icon.jpg" alt="" />
+          </label>
+          <label for="female">
+            <input type="radio" name="gender" id="female" value="female" />
+            <img id="female-img" src="./female-icon.jpg" alt="" />
+          </label>
+        </div>
 
         <div class="inputData">
           <div class="inputNumber">
             <div class="ageNumber">
               <span>Bạn bao nhiêu tuổi? (năm)</span><br />
-              <input id="age" name="ageNumber" type="number" min="5" max="100" />
+              <input
+                id="age"
+                name="ageNumber"
+                type="number"
+                min="5"
+                max="100"
+              />
             </div>
             <div class="heightNumber">
               <span>Bạn cao bao nhiêu? (cm)</span><br />
-              <input id="tall" name="heightNumber" type="number" min="100" max="250" />
+              <input
+                id="tall"
+                name="heightNumber"
+                type="number"
+                min="100"
+                max="250"
+              />
             </div>
             <div class="weightNumber">
               <span>Cân nặng của bạn? (kg)</span><br />
@@ -74,8 +161,74 @@
         </div>
       </form>
 
-      <!-- Tab panes -->
+      <!--RESULT-->
+      <section class="container">
+        <div class="content under_weight" >
+          <p class="container_text" id="container_text" style="display: none">
+            Chỉ số BMI của bạn là : <span></span>
+          </p>
+          <div class="container_content">
+            <div class="box">
+              <div class="box_image">
+                <img id="underweight-male-image" src="" alt="" />
+              </div>
+              <div class="text">
+                <p id="underweight-text" class="none_text">
+                  Thiếu cân<br/>
+                  < 18.5
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box_image">
+                <img id="healthy-male-image" src="" alt="" />
+              </div>
+              <div class="text">
+                <p id="healthy-text" class="none_text">
+                  Khỏe mạnh <br />18.5 - 24.9
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box_image">
+                <img id="overweight-male-image" src="" alt="" />
+              </div>
+              <div class="text">
+                <p id="overweight-text" class="none_text">
+                  Thừa cân <br />
+                  25 - 29.9
+                </p>
+              </div>
+            </div>
 
+            <div class="box">
+              <div class="box_image">
+                <img id="obesetype1-male-image" src="" alt="" />
+              </div>
+              <div class="text">
+                <p id="obesetype1-text" class="none_text">
+                  Tiểu đường type 1 <br />
+                  30 - 34.9
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box_image">
+                <img id="obesetype2-male-image" src="" alt="" />
+              </div>
+              <div class="text">
+                <p id="obesetype2-text" class="none_text display_text">
+                  Tiểu đường type 2 <br />
+                  > 35 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab panes -->
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button
@@ -204,6 +357,5 @@
       </div>
     </div>
     <script src="./main.js"></script>
-    
   </body>
 </html>
