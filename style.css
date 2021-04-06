@@ -94,4 +94,19 @@ margin-top: 1% !important;
     color: white !important;
 transition: 0.6s;
 }
-
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+[type=radio] + img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+/* [type=radio]:checked + img {
+  border: 1.5px solid rgb(1, 103, 255);
+} */
+.gender + img {
+  display: flex;
+}
