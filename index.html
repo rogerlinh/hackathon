@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tính chỉ số BMI</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
@@ -165,73 +162,6 @@
         </div>
       </form>
 
-      <!--SHOW RESULT-->
-      <section class="container">
-        <div class="content under_weight">
-          <p class="container_text" id="container_text" style="display: none">
-            Chỉ số BMI của bạn là : <span id="showBMI"></span>
-          </p>
-          <div class="container_content">
-            <div class="box">
-              <div class="box_image">
-                <img id="underweight-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="underweight-text" class="none_text">
-                  Thiếu cân<br />
-                  < 18.5
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box_image">
-                <img id="healthy-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="healthy-text" class="none_text">
-                  Khỏe mạnh <br />18.5 - 24.9
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box_image">
-                <img id="overweight-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="overweight-text" class="none_text">
-                  Thừa cân <br />
-                  25 - 29.9
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="box_image">
-                <img id="obesetype1-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="obesetype1-text" class="none_text">
-                  Tiểu đường type 1 <br />
-                  30 - 34.9
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="box_image">
-                <img id="obesetype2-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="obesetype2-text" class="none_text display_text">
-                  Tiểu đường type 2 <br />
-                  > 35
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Tab panes -->
     <div id="tab1">
 
@@ -365,18 +295,17 @@
   </div>  
     
     <!--gợi ý-->
-    <section class="container" id="container" style="display: none">
-      <div class="content under_weight">
-        <p class="container_text" id="container_text" style="display: none">
+    <section class="container" id="container" style="display: none" >
+        <p class="container_text" id="container_text">
           Chỉ số BMI của bạn là : <span id="span_bmi"></span>
         </p>
         <div class="container_content">
           <div class="box">
             <div class="box_image">
-              <img id="underweight-male-image" src="" alt="" />
+              <img id="underweight-image" src="" alt="" />
             </div>
             <div class="text">
-              <p id="underweight-text" class="none_text">
+              <p id="underweight-text">
                 Thiếu cân<br />
                 < 18.5
               </p>
@@ -384,20 +313,20 @@
           </div>
           <div class="box">
             <div class="box_image">
-              <img id="healthy-male-image" src="" alt="" />
+              <img id="healthy-image" src="" alt="" />
             </div>
             <div class="text">
-              <p id="healthy-text" class="none_text">
+              <p id="healthy-text">
                 Khỏe mạnh <br />18.5 - 24.9
               </p>
             </div>
           </div>
           <div class="box">
             <div class="box_image">
-              <img id="overweight-male-image" src="" alt="" />
+              <img id="overweight-image" src="" alt="" />
             </div>
             <div class="text">
-              <p id="overweight-text" class="none_text">
+              <p id="overweight-text">
                 Thừa cân <br />
                 25 - 29.9
               </p>
@@ -406,10 +335,10 @@
 
           <div class="box">
             <div class="box_image">
-              <img id="obesetype1-male-image" src="" alt="" />
+              <img id="obesetype1-image" src="" alt="" />
             </div>
             <div class="text">
-              <p id="obesetype1-text" class="none_text">
+              <p id="obesetype1-text">
                 Tiểu đường type 1 <br />
                 30 - 34.9
               </p>
@@ -418,12 +347,12 @@
 
           <div class="box">
             <div class="box_image">
-              <img id="obesetype2-male-image" src="" alt="" />
+              <img id="obesetype2-image" src="" alt="" />
             </div>
             <div class="text">
-              <p id="obesetype2-text" class="none_text display_text">
+              <p id="obesetype2-text">
                 Tiểu đường type 2 <br />
-                35 <
+                > 35 
               </p>
             </div>
           </div>
@@ -431,254 +360,34 @@
       </div>
     </section>
 
-    <section class="how" id="how" style="display: none">
-      <div class="how_solution" id="how_solution" style="display: none">
-        <div class="how_status">
-          <div class="status" id="status1">
+
+<!--Solution-->
+    <section class="how" id="how">       
+          <div class="status">
+            <div class="status-head">
             <h4 id="status_text">Tình trạng</h4>
+            <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function status_click()"></i>
           </div>
-          <div class="status" id="risk">
+            <p id="status">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident officiis eius fuga veritatis. Saepe commodi eum neque illum fugit sit maiores, eius pariatur, tenetur possimus doloribus atque unde a!</p>
+          </div>
+          <div class="risk">
+            <div class="risk-head">
             <h4 id="risk_text">Nguy cơ</h4>
+            <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function risk_click()"></i>
           </div>
-          <div class="status" id="recommend">
-            <h4 id="recommend_text">Gợi ý</h4>
+            <p id="risk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem distinctio alias, minima itaque, nihil dolorum sapiente omnis exercitationem autem quis architecto neque asperiores illum, similique repudiandae perspiciatis voluptates vel!</p>
           </div>
-        </div>
-
-
-
-        <div class="solution">
-          <div
-            class="solution_underweight"
-            style="display: none"
-            id="solution_underweight"
-          >
-            <p id="status_underweight">
-              Bạn được xem là thiếu cân nếu có chỉ số BMI dưới 18,5.
-            </p>
-            <p id="risk_underweight" style="display: none">
-              Các nghiên cứu chỉ ra rằng nững người bị thiếu cân nặng có nguy cơ
-              bị suy dinh dưỡng cao hơn, khả năng miễn dịch giảm, bị vô sinh,
-              loãng xương, vết thương lâu lành và dễ gặp các biến chứng sau phẫu
-              thuật.
-            </p>
-            <p id="recommend_underweight" style="display: none">
-              Nếu bạn muốn tăng cân, điều quan trọng trước tiên là phải xác định
-              bạn cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản
-              và các hoạt động hàng ngày của cơ thể.
-
-              <br />Tiếp theo, hãy chọn các loại thức ăn và đồ uống có thể cung
-              cấp lượng calo cao hơn mức tiêu thụ của bạn – lên đến 300-500 kcal
-              mỗi ngày. Ví dụ, nếu nhu cầu calo hàng ngày của bạn là 1700 kcal,
-              bạn cần tiêu thụ tổng cộng 2000-2200 kcal mỗi ngày để tăng cân.
-            </p>
-          </div>
-
-          <div
-            class="solution_healthy"
-            style="display: none"
-            id="solution_healthy"
-          >
-            <p id="status_healthy">
-              Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi
-              vào khoảng 18,5 đến 22,9.
-            </p>
-            <p id="risk_healthy" style="display: none">
-              Ngay cả những người có chỉ số BMI khỏe mạnh cũng có thể đứng trước
-              nguy cơ mắc một số tình trạng sức khoẻ. Vì vậy, điều quan trọng là
-              cần xây dựng một lối sống lành mạnh thông qua chế độ ăn uống thích
-              hợp, vận động hợp lý và khám sức khỏe định kỳ để duy trì sức khỏe
-              tốt nhất có thể.
-            </p>
-            <p id="recommend_healthy" style="display: none">
-              Nếu bạn muốn duy trì trọng lượng cơ thể, đầu tiên hãy xác định bạn
-              cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và
-              các hoạt động hàng ngày của cơ thể.
-
-              <br />
-              Chọn các thực phẩm và đồ uống cung cấp một lượng calo tương đương
-              với nhu cầu calo hàng ngày của bạn. Ví dụ: Nếu nhu cầu calo hàng
-              ngày của bạn là 1950 kcal, bạn cần tiêu thụ tổng cộng 1950 kcal
-              mỗi ngày để duy trì cân nặng của mình.
-            </p>
-          </div>
-          <div
-            class="solution_overweight"
-            style="display: none"
-            id="solution_overweight"
-          >
-            <p id="status_overweight">
-              Bạn được xem là thừa cân nếu có chỉ số BMI nằm trong khoảng từ 23
-              đến 24,9.
-            </p>
-            <p id="risk_overweight" style="display: none">
-              Thừa cân có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
-              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
-              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
-            </p>
-            <p id="recommend_overweight" style="display: none">
-              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định lượng calo cần
-              nạp mỗi ngày để thực hiện các chức năng cơ bản và các hoạt động
-              hàng ngày của cơ thể. Tiếp theo, hãy chọn những loại thức ăn và đồ
-              uống cung cấp ít calo hơn nhu cầu hàng ngày của bạn. <br />
-              <span style="font-weight: 700">Ví dụ</span>, nếu nhu cầu calo tiêu
-              thụ hàng ngày của bạn là 2100 kcal, hãy cố gắng giảm tổng lượng
-              calo đó xuống 300-500 kcal. Giảm tới 500 kcal mỗi ngày sẽ giúp bạn
-              giảm tới 0,5-1 kg cân nặng mỗi tuần.
-
-              <br />
-              <i style="font-weight: bold"
-                >Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
-              >
-              <br />
-              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
-              giới cần tới 2500 kcal mỗi ngày. <br />
-              Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì
-              các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày
-              sẽ có tác động xấu đến cơ thể của bạn.
-            </p>
-          </div>
-
-          <div
-            class="solution_obese1"
-            style="display: none"
-            id="solution_obese1"
-          >
-            <p id="status_obese1">
-              Bạn được coi là béo phì cấp độ 1 nếu bạn có chỉ số BMI từ 25 đến
-              29,9.
-            </p>
-            <p id="risk_obese1" style="display: none">
-              Béo phì có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
-              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
-              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
-            </p>
-            <p id="recommend_obese1" style="display: none">
-              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định mình cần bao
-              nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt
-              động hàng ngày của cơ thể.<br />
-              Tiếp theo, hãy ăn các món cung cấp ít calo hơn nhu cầu hàng ngày
-              của bạn. <br />
-              Ví dụ: nếu yêu cầu lượng calo hàng ngày của bạn là 2100 kcal, hãy
-              cố gắng giảm tổng lượng calo đó xuống 300-500 kcal. Giảm tới 500
-              kcal mỗi ngày sẽ hỗ trợ bạn giảm tới 0,5-1 kg trọng lượng mỗi
-              tuần.
-
-              <br /><br />
-              <i style="font-weight: bold">
-                Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
-              >
-              <br />
-              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
-              giới cần tới 2500 kcal mỗi ngày. <br />Tuy nhiên, mỗi người cần
-              tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ
-              thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ
-              thể của bạn.
-            </p>
-          </div>
-
-          <div
-            class="solution_obese2"
-            style="display: none"
-            id="solution_obese2"
-          >
-            <p id="status_obese2">
-              Bạn được coi là béo phì cấp độ 2 nếu có chỉ số BMI trên 30.
-            </p>
-            <p id="risk_obese2" style="display: none">
-              Béo phì có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
-              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
-              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
-            </p>
-            <p id="recommend_obese2" style="display: none">
-              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định mình cần bao
-              nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt
-              động hàng ngày của cơ thể.<br />
-              Tiếp theo, hãy ăn các món cung cấp ít calo hơn nhu cầu hàng ngày
-              của bạn. <br />
-              Ví dụ: nếu yêu cầu lượng calo hàng ngày của bạn là 2100 kcal, hãy
-              cố gắng giảm tổng lượng calo đó xuống 300-500 kcal. Giảm tới 500
-              kcal mỗi ngày sẽ hỗ trợ bạn giảm tới 0,5-1 kg trọng lượng mỗi
-              tuần. <br /><br />
-              <i style="font-weight: bold">
-                Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
-              >
-
-              <br />
-              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
-              giới cần tới 2500 kcal mỗi ngày.
-              <br />
-              Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì
-              các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày
-              sẽ có tác động xấu đến cơ thể của bạn.
-            </p>
-          </div>
-        </div>
-      </div>
+          <div class="recommend">
+            <div class="recommend-head">
+              <h4 id="recommend_text">Gợi ý</h4>
+              <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function recommend_click()"></i>
+            </div>
+            <p id="recommend">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum possimus velit minus aliquam vero aut quibusdam, illo, accusantium laudantium non alias, animi facilis. Voluptas, omnis atque? Nulla modi ducimus enim!</p>
+          </div> 
     </section>
 
-    <section class="information" id="information">
-      <div class="information_content">
-        <div class="concept">
-          <div class="concept_img">
-            <img src="./info-icon.png" alt="" />
-          </div>
-          <div class="concept_text">
-            <h3>Thông tin</h3>
-          </div>
-        </div>
 
-        <div class="specific_information">
-          <div class="concept_bmi">
-            <div class="concept_bmi_content">
-              <h4 id="text_define">
-                Chỉ số khối cơ thể (BMI) là gì? - Định nghĩa BMI
-              </h4>
-              <i class="fal fa-plus" id="define"></i>
-            </div>
-            <div class="bmi_explain" style="display: none" id="bmi_define">
-              <i
-                >Chỉ số khối cơ thể (BMI) là phép đo trọng lượng của một người
-                tương ứng với chiều cao của người đó. Chỉ số BMI cao có thể cho
-                thấy mức độ béo phì hay thừa cân nhiều. BMI có thể là một công
-                cụ sàng lọc nhưng không dùng chẩn đoán tình trạng béo phì hoặc
-                sức khỏe cá nhân. Để xác định chỉ số BMI có tiềm ẩn một nguy cơ
-                ảnh hưởng sức khỏe hay không, bác sĩ hay các chuyên gia y tế sẽ
-                cần thực hiện thêm những đánh giá khác như đo độ dày nếp gấp da,
-                đánh giá chế độ ăn uống, hoạt động thể chất và tiền sử gia
-                đình.</i
-              >
-            </div>
-          </div>
 
-          <div class="concept_bmi" style="padding-top: 30px">
-            <div class="concept_bmi_content">
-              <h4 id="text_explain">Giải thích chỉ số BMI</h4>
-              <i class="fal fa-plus" id="explain"></i>
-            </div>
-            <div
-              id="bmi_explain"
-              class="bmi_explain"
-              style="height: auto; display: none"
-            >
-              <i
-                >Đối với người lớn từ 20 tuổi trở lên, BMI được tính bằng cách
-                sử dụng các phân loại trạng thái cân nặng tiêu chuẩn. Các chuẩn
-                này giống nhau với nam giới và phụ nữ ở mọi thể trạng và lứa
-                tuổi. Đối với trẻ em và thanh thiếu niên, BMI phân biệt theo
-                tuổi và giới tính và thường được gọi là BMI theo tuổi. Ở trẻ em,
-                lượng chất béo trong cơ thể cao có thể dẫn đến các bệnh liên
-                quan đến cân nặng và các vấn đề sức khỏe khác. Thiếu cân cũng có
-                thể tăng nguy cơ mắc một số tình trạng sức khỏe, bệnh lý. Chỉ số
-                BMI cao thường cho thấy cơ thể thừa cân. Chỉ số này không trực
-                tiếp đo lượng mỡ trong cơ thể nhưng có tương quan với các phép
-                đo trực tiếp xác định lượng mỡ trong cơ thể (1,2,3).</i
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="question" id="question" style="display: none">
       <div class="question_container">
         <div class="regular_question">

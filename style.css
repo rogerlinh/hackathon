@@ -171,148 +171,35 @@ input:focus {
   display: flex;
 }
 
-.container .content {
-  padding-left: 135px;
-}
-
-.container .content .container_content {
-  display: flex;
-}
-.container .content .container_content .box {
-  padding-left: 45px;
-}
-.container .content .container_text {
-  padding-left: 120px;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 40px;
-  font-weight: bold;
-}
-.container .content .container_content .box p {
+.container {
   text-align: center;
-  font-weight: 100;
-  padding-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container .content .container_content .box .weight {
-  font-weight: bold;
+.container .container_text {
+  font-weight: 600;
+  font-size: 30px;;
 }
-.none_text {
-  display: none;
+.container .container_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 /* gợi ý */
-.how .how_solution {
-  margin-left: 100px;
-}
 .how {
-  padding-top: 50px;
-}
-.how .how_status {
   display: flex;
-  width: 20%;
-  justify-content: space-between;
-  height: 45px;
-  align-items: center;
-  border-bottom: 0.5px solid rgb(228, 219, 219);
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
 }
-.how_status .status {
-  color: rgb(121, 118, 118);
-  margin-bottom: -18px;
-}
-.how_status .status h4 {
-  cursor: pointer;
-}
-.how_solution .solution {
-  width: 50%;
-  padding-top: 20px;
-}
-.solution_color {
-  border-bottom: 3px solid #1878ee;
-}
-.solution_text_color {
-  color: #1878ee;
-}
-.information_content {
-  padding-top: 30px;
-  width: 100%;
-  height: auto;
-  padding-left: 100px;
-}
-.information_content .concept {
+.status-head, .risk-head, .recommend-head {
   display: flex;
 }
-.concept_text {
-  padding-left: 5px;
-}
-.concept_text h3 {
-  color: #8c8c8c;
-  font-size: 15px;
-}
-.specific_information {
-  padding-left: 16px;
+.fa {
+  margin-left: 10px;
   margin-top: 5px;
 }
-.concept_bmi_content {
-  display: flex;
 
-  width: 35%;
-  justify-content: space-between;
-  align-items: center;
-}
-.bmi_explain {
-  width: 35%;
-  background: #d6d9e2;
-  height: auto;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.concept_bmi_content h4 {
-  font-weight: 300;
-}
-#explain,
-#define {
-  cursor: pointer;
-}
-.trans {
-  transform: translateY(10px);
-}
-.question_container {
-  padding-top: 60px;
-  width: 100%;
-  height: auto;
-  padding-left: 100px;
-}
 
-.box_text {
-  display: flex;
-
-  width: 50%;
-  justify-content: space-between;
-  align-items: center;
-}
-.box_text h4 {
-  font-weight: 300;
-}
-.question_content {
-  padding-left: 20px;
-}
-
-.question_content_box {
-  padding-top: 20px;
-}
-.box_content {
-  width: 50%;
-  background: #d6d9e2;
-  margin-top: 15px;
-  padding: 10px;
-}
-#icon1,
-#icon2,
-#icon3,
-#icon4 {
-  cursor: pointer;
-}
 
 .footer {
   width: 100%;
