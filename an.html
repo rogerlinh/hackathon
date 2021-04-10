@@ -4,371 +4,208 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tính chỉ số BMI</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
     />
-    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
       rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
     />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--MENU-->
-    <section class="menu">
+    <section class="header">
       <h1><span> BMI </span> Caculator</h1>
-      <div class="menu_text">
+      <div class="header_text">
         <p onclick="showSearch()" id="search">Tìm kiếm thông tin</p>
         <p>Liên Hệ</p>
       </div>
     </section>
 
+    <section class="background">
+      <div class="background_img">
+        <img src="image/bg.png" alt="" />
+      </div>
+      <div class="background_text">
+        <div class="big_text">
+          <h2>Tính chỉ số BMI - Chỉ số khối cơ thể</h2>
+        </div>
+        <div class="small_text">
+          <p>
+            Sử dụng công cụ này để kiểm tra chỉ số khối cơ thể (BMI) để biết bạn
+            có đang ở mức cân nặng hợp lý hay không. Bạn cũng có thể kiểm tra
+            chỉ số BMI của trẻ tại đây.
+          </p>
+        </div>
+      </div>
+      <div class="weight_img">
+        <img src="image/weight.png" alt="" />
+      </div>
+    </section>
+
     <section class="search">
       <img
-        onclick="closeSearch()"
+        onclick="closesearch()"
         id="search_close"
-        src="./close.png"
+        src="image/close.png"
         alt=""
         style="
           width: 30px;
           height: 30px;
           position: absolute;
           top: 15px;
-          right: 140px;
+          right: 23px;
           cursor: pointer;
         "
       />
       <div class="search_content" style="margin-left: 100px">
         <ul>
-          <li><a href="#">Bệnh tiêu hóa </a></li>
-          <li><a href="#">Chăm sóc giấc ngủ </a></li>
-          <li><a href="#">Mang thai </a></li>
-          <li><a href="#">Sức khỏe phụ nữ </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="https://benhvienthucuc.com/cac-benh-thuong-gap-o-duong-tieu-hoa/?gclid=CjwKCAjw07qDBhBxEiwA6pPbHqeuRizoeiVKXUULiJk-doJp3QerKLAIKDsaQKD4EWtFA0TmwIpJpxoCih4QAvD_BwE">Bệnh tiêu hóa </a></li>
+          <li><a href="http://benhvien108.vn/cham-soc-giac-ngu-cua-be.htm">Chăm sóc giấc ngủ </a></li>
+          <li><a href="https://benhvienthucuc.com/dau-hieu-mang-thai-som/?gclid=CjwKCAjw07qDBhBxEiwA6pPbHqRk2bGNFh3bC0pqPaoh20wQp9ujkSg1OiSew_e0LrgIJSD-WJQhdhoCHyMQAvD_BwE">Mang thai </a></li>
+          <li><a href="http://benhvienpsnbd.com.vn/dich-vu/cham-soc-suc-khoe-phu-nu.htm">Sức khỏe phụ nữ </a></li>
+          <li><a href="https://giadinhnestle.com.vn/sua-chua-sanh-quyen-acti-v?gclsrc=aw.ds&&utm_source=Google&utm_medium=Search&utm_campaign=VN_MULT_acv_vi_GO_Other_NA_NA_CON_RTDDRY_ActiV-AWO-Affinity-Healthy_12549909300&utm_content=acv_Stext_%C4%82n-L%C3%A0nh-M%E1%BA%A1nh&gclid=CjwKCAjw07qDBhBxEiwA6pPbHgqOXWRZRxJQdehlNmMTEEbV-XpnPcYxqUDf8Ydo7a4W_qghaqhKsBoCjwEQAvD_BwE">Ăn uống lành mạnh </a></li>
+          <li><a href="https://2020.meosonghiendai.com/74-thoi-quen-lanh-manh-cai-thien-dang-ke-cuoc-song-cua-ban/">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh cơ xương khớp </a></li>
+          <li><a href="#">Bệnh tim mạch </a></li>
+          <li><a href="#">Da liễu </a></li>
+          <li><a href="#">Nuôi dạy con </a></li>
+          <li><a href="#">Sức khỏe răng miệng </a></li>
+          <li><a href="#">Thuốc và thực phẩm chức năng </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh hô hấp</a></li>
+          <li><a href="#">Bệnh truyền nhiễm </a></li>
+          <li><a href="#">Dị ứng </a></li>
+          <li><a href="#">Sức khỏe </a></li>
+          <li><a href="#">Sức khỏe tình dục </a></li>
+          <li><a href="#">Tiểu Đường </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh thận và đường tiết liệu </a></li>
+          <li><a href="#">Bệnh não&hệ thần kinh</a></li>
+          <li><a href="#">Lão hóa lành mạnh </a></li>
+          <li><a href="#">Sức khỏe nam giới </a></li>
+          <li><a href="#">Thể dục thể thao </a></li>
           <li><a href="#">Thói quen lành mạnh </a></li>
         </ul>
       </div>
       <div class="search_content">
         <ul>
-          <li><a href="#">Bệnh tiêu hóa </a></li>
-          <li><a href="#">Chăm sóc giấc ngủ </a></li>
-          <li><a href="#">Mang thai </a></li>
-          <li><a href="#">Sức khỏe phụ nữ </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-        </ul>
-      </div>
-      <div class="search_content">
-        <ul>
-          <li><a href="#">Bệnh tiêu hóa </a></li>
-          <li><a href="#">Chăm sóc giấc ngủ </a></li>
-          <li><a href="#">Mang thai </a></li>
-          <li><a href="#">Sức khỏe phụ nữ </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-        </ul>
-      </div>
-      <div class="search_content">
-        <ul>
-          <li><a href="#">Bệnh tiêu hóa </a></li>
-          <li><a href="#">Chăm sóc giấc ngủ </a></li>
-          <li><a href="#">Mang thai </a></li>
-          <li><a href="#">Sức khỏe phụ nữ </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-        </ul>
-      </div>
-      <div class="search_content">
-        <ul>
-          <li><a href="#">Bệnh tiêu hóa </a></li>
-          <li><a href="#">Chăm sóc giấc ngủ </a></li>
-          <li><a href="#">Mang thai </a></li>
-          <li><a href="#">Sức khỏe phụ nữ </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
-          <li><a href="#">Thói quen lành mạnh </a></li>
+          <li><a href="#">Bệnh tai mũi họng </a></li>
+          <li><a href="#">Bệnh về máu</a></li>
+          <li><a href="#">Dược liệu </a></li>
+          <li><a href="#">Sức khỏe mắt </a></li>
+          <li><a href="#">Tâm lý - Tâm thần </a></li>
+          <li><a href="#">Ung thư - Bướu</a></li>
         </ul>
       </div>
     </section>
 
-    <!--HEADER-->
-    <div class="header">
-      <div class="title-bmi">
-        <h1>Công cụ tính chỉ số BMI</h1>
-        <p>
-          Chỉ số BMI còn được gọi là chỉ số khối lượng cơ thể (Body Mass Index).
-          Dựa vào chỉ số BMI của một người có thể biết được người đó béo, gầy
-          hay có cân nặng lý tưởng.
-        </p>
-      </div>
-      <img class="scale" src="./toolsIconBmi.png" alt="scale" />
-    </div>
-
-    <!--INPUT DATA-->
-    <div id="bmi" class="caculator">
-      <form id="input1">
-        <p style="font-weight: bold; text-align: left">Giới tính của bạn</p>
-        <div id="gender">
-          <label for="male">
-            <input type="radio" name="gender" id="male" value="male" />
-            <img id="male-img" src="./male-icon.jpg" alt="" />
-          </label>
-          <label for="female">
-            <input type="radio" name="gender" id="female" value="female" />
-            <img id="female-img" src="./female-icon.jpg" alt="" />
-          </label>
-        </div>
-
-        <div class="inputData">
-          <div class="inputNumber">
-            <div class="ageNumber">
-              <span>Bạn bao nhiêu tuổi? (năm)</span><br />
-              <input
-                id="age"
-                name="ageNumber"
-                type="number"
-                min="5"
-                max="100"
-              />
-            </div>
-            <div class="heightNumber">
-              <span>Bạn cao bao nhiêu? (cm)</span><br />
-              <input
-                id="tall"
-                name="heightNumber"
-                type="number"
-                min="100"
-                max="250"
-              />
-            </div>
-            <div class="weightNumber">
-              <span>Cân nặng của bạn? (kg)</span><br />
-              <input name="weightNumber" type="number" min="10" max="200" />
-            </div>
-            <button type="submit" class="btn">Tính ngay</button>
+    <section class="caculator">
+      <div class="caculator_content">
+        <div class="caculator_gender">
+          <div class="text_gender">
+            <h3
+              style="
+                font-size: 20px;
+                color: rgb(121, 118, 118);
+                font-weight: 700;
+              "
+            >
+              Giới tính của bạn
+            </h3>
           </div>
-        </div>
-      </form>
-
-      <!--SHOW RESULT-->
-      <section class="container">
-        <div class="content under_weight">
-          <p class="container_text" id="container_text" style="display: none">
-            Chỉ số BMI của bạn là : <span id="showBMI"></span>
-          </p>
-          <div class="container_content">
-            <div class="box">
-              <div class="box_image">
-                <img id="underweight-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="underweight-text" class="none_text">
-                  Thiếu cân<br />
-                  < 18.5
-                </p>
-              </div>
+          <div class="img_gender">
+            <div
+              class="image_gender"
+              id="male"
+              onclick="checkMale()"
+              selected="false"
+            >
+              <img
+                class="color_gender"
+                src="https://img.icons8.com/bubbles/100/000000/male-beloved.png"
+              />
             </div>
-            <div class="box">
-              <div class="box_image">
-                <img id="healthy-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="healthy-text" class="none_text">
-                  Khỏe mạnh <br />18.5 - 24.9
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box_image">
-                <img id="overweight-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="overweight-text" class="none_text">
-                  Thừa cân <br />
-                  25 - 29.9
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="box_image">
-                <img id="obesetype1-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="obesetype1-text" class="none_text">
-                  Tiểu đường type 1 <br />
-                  30 - 34.9
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="box_image">
-                <img id="obesetype2-male-image" src="" alt="" />
-              </div>
-              <div class="text">
-                <p id="obesetype2-text" class="none_text display_text">
-                  Tiểu đường type 2 <br />
-                  > 35
-                </p>
-              </div>
+            <div
+              class="image_gender"
+              id="female"
+              style="margin-left: 20px"
+              onclick="checkFemale()"
+            >
+              <img
+                class="color_gender"
+                src="https://img.icons8.com/bubbles/100/000000/gemologist-female.png"
+              />
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Tab panes -->
-    <div id="tab1">
-
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button
-          class="nav-link active"
-          id="nav-home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-home"
-            type="button"
-            role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
-            >
-            Yếu tố ảnh hưởng đến cân nặng
-          </button>
-          <button
-          class="nav-link"
-          id="nav-profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-profile"
-          type="button"
-          role="tab"
-          aria-controls="nav-profile"
-          aria-selected="false"
-          >
-            Ảnh hưởng của chỉ số BMI
-          </button>
-          <button
-          class="nav-link"
-            id="nav-contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-contact"
-            type="button"
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-            >
-            Cách để có chỉ số BMI lý tưởng?
-          </button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div
-        class="tab-pane fade show active"
-          id="nav-home"
-          role="tabpanel"
-          aria-labelledby="nav-home-tab"
-        >
-          <p>Một số yếu tố ảnh hưởng đến cân nặng của bạn, bao gồm:</p>
-          <ul>
-            <li>
-              Lượng calo dư thừa: Cơ thể cần bổ sung đủ calo để đáp ứng nhu cầu
-              năng lượng hàng ngày. Tuy nhiên, calo khi dư thừa sẽ được lưu trữ
-              dưới dạng chất béo. Bổ sung quá nhiều calo sẽ dẫn đến thừa cân,
-              béo phì.
-            </li>
-            <li>
-              Tuổi cao: Cân nặng của bạn thường sẽ tăng thêm một chút khi bạn
-              già đi.
-            </li>
-            <li>
-              Yếu tố về gen: Một số trường hợp bị rối loạn di truyền, dẫn đến
-              béo phì.
-            </li>
-            <li>
-              Quá trình mang thai: Trong thai kỳ, mẹ bầu thường sẽ tăng cân. Sau
-              khi sinh con, người phụ nữ thường không thể giảm cân về mức bình
-              thường như trước khi mang thai.
-            </li>
-          </ul>
-          <span>
-            Ngoài các yếu tố về cơ địa hay thai kỳ, bạn có thể chủ động kiểm
-            soát lượng calo nạp vào cơ thể hàng ngày để giữ cho chỉ số BMI ở mức
-            bình thường.
-          </span>
-        </div>
-        <div
-        class="tab-pane fade"
-        id="nav-profile"
-        role="tabpanel"
-        aria-labelledby="nav-profile-tab"
-        >
-        <span>
-            <p>
-              Chỉ số BMI tăng quá cao sẽ ảnh hưởng xấu đến sức khỏe và gây ra
-              nhiều bệnh lý nguy hiểm. Nhiều vấn đề sức khỏe nghiêm trọng có
-              liên quan đến tình trạng thừa cân hoặc béo phì, bao gồm:
-            </p>
-            <ul>
-              <li>Bệnh tim mạch</li>
-              <li>Bệnh tiểu đường</li>
-              <li>Bệnh về túi mật</li>
-              <li>
-                Nguy cơ gây ra một số loại ung thư, chẳng hạn như ung thư nội
-                mạc tử cung, ung thư vú, ung thư đại tràng và túi mật.
-              </li>
-              <li>
-                Ngoài ra, béo phì cũng có thể làm tăng nguy cơ ung thư buồng
-                trứng.
-              </li>
-              <li>Chứng ngưng thở khi ngủ</li>
-              <li>Bệnh về khớp</li>
-              <li>Vô sinh.</li>
-            </ul>
-          </span>
-        </div>
-        <div
-        class="tab-pane fade"
-        id="nav-contact"
-        role="tabpanel"
-        aria-labelledby="nav-contact-tab"
-        >
-        <p>
-          Để đạt được chỉ số BMI lý tưởng, bạn cần phải giảm cân. Việc giảm
-          cân đòi hỏi bạn phải sử dụng lượng calo nhiều hơn mức nạp vào. Bạn
-            có thể thực hiện điều này bằng cách luyện tập thể dục thường xuyên
-            để đốt cháy năng lượng dư thừa, kết hợp với chế độ ăn uống lành
-            mạnh.
-          </p>
-          <span>
-            Tốt nhất, hãy đến gặp bác sĩ để có thể lên kế hoạch ăn uống cân
-            bằng, hợp lý và đảm bảo dinh dưỡng. Nếu cần thiết, bạn có thể nhanh
-            chóng đạt đến chỉ số BMI bình thường bằng các chế độ ăn kiêng nghiêm
-            ngặt, phối hợp với các bài tập thể dục đều đặn.
-          </span>
+        <div class="caculator_select">
+          <form action="" id="select">
+            <div class="select_content">
+              <span>Bạn bao nhiêu tuổi?(năm)</span><br />
+              <input
+                type="text"
+                name="age"
+                onclick="change_input1()"
+                id="input1"
+              />
+            </div>
+            <div class="select_content">
+              <span>Bạn cao bao nhiêu?(cm)</span><br />
+              <input type="text" name="height" onclick="change_input2()" />
+            </div>
+            <div class="select_content">
+              <span>Cân nặng của bạn?(kg)</span><br />
+              <input type="text" name="weight" onclick="change_input3()" />
+            </div>
+            <div class="btn">
+              <button id="select_btn" onclick="aaa()">Tính Ngay</button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-  </div>  
-    
-    <!--gợi ý-->
+    </section>
+
     <section class="container" id="container" style="display: none">
       <div class="content under_weight">
         <p class="container_text" id="container_text" style="display: none">
-          Chỉ số BMI của bạn là : <span id="span_bmi"></span>
+          Chỉ số BMI của bạn là : <span id="showBMI"></span>
         </p>
         <div class="container_content">
           <div class="box">
@@ -444,9 +281,6 @@
             <h4 id="recommend_text">Gợi ý</h4>
           </div>
         </div>
-
-
-
         <div class="solution">
           <div
             class="solution_underweight"
@@ -621,7 +455,7 @@
       <div class="information_content">
         <div class="concept">
           <div class="concept_img">
-            <img src="./info-icon.png" alt="" />
+            <img src="image/info-icon.png" alt="" />
           </div>
           <div class="concept_text">
             <h3>Thông tin</h3>
@@ -683,7 +517,8 @@
       <div class="question_container">
         <div class="regular_question">
           <h4 style="color: #8c8c8c; font-size: 15px">
-            <span><img src="./info-icon.png" alt="" /></span> Câu hỏi thường gặp
+            <span><img src="image/info-icon.png" alt="" /></span> Câu hỏi thường
+            gặp
           </h4>
         </div>
         <div class="question_content" id="question_underweight">
@@ -730,46 +565,27 @@
       </div>
     </section>
 
-    <section class="email" id="email" style="display: none">
-      <div class="email_box">
-        <div class="email_content">
-          <div class="email_content_final">
-            <h4
-              style="
-                font-size: 25px;
-                color: rgb(56, 53, 53);
-                font-weight: 600;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                padding-top: 10px;
-              "
-            >
-              Đạt mốc cân nặng lý tưởng
-            </h4>
-            <div class="signup">
-              <h5>
-                Đăng ký nhận bản tin sức khỏe,luyện tập thể thao từ các chuyên
-                gia y tế và chuyên gia dinh dưỡng cộng tác cùng chúng tôi.
-              </h5>
-            </div>
-            <input
-              type="text"
-              placeholder="Địa chỉ email của bạn"
-              style="
-                width: 55%;
-                height: 45px;
-                border: 0.5px solid rgb(226, 226, 221);
-                border-radius: 5px;
-              "
-            />
-            <div class="btn"><button>Đăng ký</button></div>
-          </div>
-        </div>
+    <section class="email" id="email" style="display: none;">
+     <div class="email_box">
+      <div class="email_content">
+     <div class="email_content_final">
+        <h4 style="font-size: 25px; color: rgb(56, 53, 53); font-weight: 600; font-family:Verdana, Geneva, Tahoma, sans-serif; padding-top: 10px;">Đạt mốc cân nặng lý tưởng</h4>
+     <div class="signup">
+        <h5>Đăng ký nhận bản tin sức khỏe,luyện tập thể thao từ các chuyên gia y tế và chuyên gia dinh dưỡng cộng tác cùng chúng tôi.</h5>
       </div>
+        <input type="text" placeholder="Địa chỉ email của bạn" style="width:55%;height:45px;border: .5px solid rgb(226, 226, 221);border-radius: 5px;">
+      <div class="btn"><button>Đăng ký</button></div>
+    </div>
+  </div>
+</div>
     </section>
-
+   
+   
+   
+   
     <section class="footer" style="font-family: 'Open Sans', sans-serif">
       <div class="footer_content">
-        <div class="footer_content_banner" style="cursor: pointer">
+        <div class="footer_content_banner" style="cursor: pointer;">
           <div class="footer_content_header">
             <h4 style="color: white; font-size: 30px">BMI Caculator</h4>
           </div>
@@ -784,8 +600,7 @@
               </h5>
             </div>
 
-            <div
-              id="child2"
+            <div id="child2"
               class="footer_content_child1"
               style="font-size: 24px; font-weight: 700"
             >
@@ -821,82 +636,69 @@
 
         <div class="footer_content_final">
           <div class="contact">
-            <div
-              class="contact_text"
-              style="
-                color: white;
-                padding-bottom: 10px;
-                font-weight: 500;
-                padding-left: 5px;
-              "
-            >
-              <p>Kết nối với chúng tôi</p>
-            </div>
-            <div class="contact_img">
-              <div class="image">
-                <img src="./icons8-facebook-96.png" alt="" />
-              </div>
+         <div class="contact_text" style="color: white;padding-bottom: 10px; font-weight: 500; padding-left: 5px;">
+           <p>Kết nối với chúng tôi</p>
+         </div>
+         <div class="contact_img">
+           <div class="image">
+             <img src="image/icons8-facebook-96.png" alt="">
+           </div>
 
-              <div class="image">
-                <img src="./icons8-twitter-96.png" alt="" />
-              </div>
+           <div class="image">
+            <img src="image/icons8-twitter-96.png" alt="">
+          </div>
 
-              <div class="image">
-                <img src="./icons8-tiktok-100 (1).png" alt="" />
-              </div>
+          <div class="image">
+            <img src="image/icons8-tiktok-100 (1).png" alt="">
+          </div>
 
-              <div class="image">
-                <img src="./icons8-play-button-96.png" alt="" />
-              </div>
-            </div>
+          <div class="image">
+            <img src="image/icons8-play-button-96.png" alt="">
+          </div>
+         </div>
           </div>
           <div class="explore">
-            <div class="explore_text" style="width: 70%">
-              <p style="color: rgb(154, 162, 172)">
-                Tập đoàn L.A Health Group có trụ sở ở khắp các quốc gia,được
-                nhiều người tin dùng
-              </p>
+            <div class="explore_text" style="width:70%">
+              <p style="color: rgb(154, 162, 172);">Tập đoàn L.A Health Group có trụ sở ở khắp các quốc gia,được nhiều người tin dùng</p>
             </div>
             <div class="explore_flag">
               <div class="flag_img">
-                <img src="./icons8-england-30.png" alt="" />
+                <img src="image1/icons8-england-30.png" alt="">
               </div>
               <div class="flag_img">
-                <img src="./icons8-flag-of-europe-40.png" alt="" />
+                <img src="image1/icons8-flag-of-europe-40.png" alt="">
               </div>
               <div class="flag_img">
-                <img src="./icons8-mozambique-flag-30.png" alt="" />
+                <img src="image1/icons8-mozambique-flag-30.png" alt="">
               </div>
               <div class="flag_img">
-                <img src="./icons8-vietnam-48 (1).png" alt="" />
+                <img src="image1/icons8-vietnam-48 (1).png" alt="">
               </div>
               <div class="flag_img">
-                <img src="./icons8-vertical-flag-40.png" alt="" />
+                <img src="image1/icons8-vertical-flag-40.png" alt="">
               </div>
               <div class="flag_img">
-                <img src="./icons8-spain-flag-48.png" alt="" />
+                <img src="image1/icons8-spain-flag-48.png" alt="">
               </div>
             </div>
           </div>
-        </div>
 
+         
+        </div>
+        
         <div class="copyright">
-          <div class="copyright_content">
-            <div class="text">
-              <p>
-                © 2021 Bản quyền các bài viết thuộc tập đoàn L.A Health Group.
-                Các bài viết của L.A Health Group và BMI Caculator chỉ có tính
-                chất tham khảo, không thay thế cho việc chẩn đoán hoặc điều trị
-                y khoa.
-              </p>
-            </div>
-            <div class="copyright_img">
-              <img src="./dmca.png" alt="" />
-            </div>
-          </div>
+         <div class="copyright_content">
+           <div class="text">
+             <p>© 2021 Bản quyền các bài viết thuộc tập đoàn L.A Health Group. Các bài viết của L.A Health Group và BMI Caculator chỉ có tính chất tham khảo, không thay thế cho việc chẩn đoán hoặc điều trị y khoa.</p>
+           </div>
+           <div class="copyright_img">
+             <img src="image1/dmca.png" alt="">
+           </div>
+         </div>
         </div>
       </div>
     </section>
-    <script src="./main.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
