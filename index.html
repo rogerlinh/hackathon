@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tính chỉ số BMI</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
@@ -134,7 +137,7 @@
         <div class="inputData">
           <div class="inputNumber">
             <div class="ageNumber">
-              <span>Bạn bao nhiêu tuổi? (năm)</span><br />
+              <span>Bạn bao nhiêu tuổi?</span><br />
               <input
                 id="age"
                 name="ageNumber"
@@ -161,38 +164,37 @@
           </div>
         </div>
       </form>
-
-      <!-- Tab panes -->
+    </div>
+    <!-- Tab panes -->
     <div id="tab1">
-
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button
-          class="nav-link active"
-          id="nav-home-tab"
+            class="nav-link active"
+            id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
             type="button"
             role="tab"
             aria-controls="nav-home"
             aria-selected="true"
-            >
+          >
             Yếu tố ảnh hưởng đến cân nặng
           </button>
           <button
-          class="nav-link"
-          id="nav-profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-profile"
-          type="button"
-          role="tab"
-          aria-controls="nav-profile"
-          aria-selected="false"
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
           >
             Ảnh hưởng của chỉ số BMI
           </button>
           <button
-          class="nav-link"
+            class="nav-link"
             id="nav-contact-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-contact"
@@ -200,14 +202,14 @@
             role="tab"
             aria-controls="nav-contact"
             aria-selected="false"
-            >
+          >
             Cách để có chỉ số BMI lý tưởng?
           </button>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
         <div
-        class="tab-pane fade show active"
+          class="tab-pane fade show active"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
@@ -241,12 +243,12 @@
           </span>
         </div>
         <div
-        class="tab-pane fade"
-        id="nav-profile"
-        role="tabpanel"
-        aria-labelledby="nav-profile-tab"
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
         >
-        <span>
+          <span>
             <p>
               Chỉ số BMI tăng quá cao sẽ ảnh hưởng xấu đến sức khỏe và gây ra
               nhiều bệnh lý nguy hiểm. Nhiều vấn đề sức khỏe nghiêm trọng có
@@ -271,14 +273,14 @@
           </span>
         </div>
         <div
-        class="tab-pane fade"
-        id="nav-contact"
-        role="tabpanel"
-        aria-labelledby="nav-contact-tab"
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
         >
-        <p>
-          Để đạt được chỉ số BMI lý tưởng, bạn cần phải giảm cân. Việc giảm
-          cân đòi hỏi bạn phải sử dụng lượng calo nhiều hơn mức nạp vào. Bạn
+          <p>
+            Để đạt được chỉ số BMI lý tưởng, bạn cần phải giảm cân. Việc giảm
+            cân đòi hỏi bạn phải sử dụng lượng calo nhiều hơn mức nạp vào. Bạn
             có thể thực hiện điều này bằng cách luyện tập thể dục thường xuyên
             để đốt cháy năng lượng dư thừa, kết hợp với chế độ ăn uống lành
             mạnh.
@@ -292,189 +294,153 @@
         </div>
       </div>
     </div>
-  </div>  
-    
+
     <!--gợi ý-->
-    <section class="container" id="container" style="display: none" >
-        <p class="container_text" id="container_text">
-          Chỉ số BMI của bạn là : <span id="span_bmi"></span>
+    <div class="container" id="container">
+      <p class="container_text" id="container_text">
+        Chỉ số BMI của bạn là : <span id="span_bmi"></span>
+      </p>
+      <div class="container_content">
+        <div class="box">
+          <div class="box_image">
+            <img id="underweight-image" src="" alt="" />
+          </div>
+          <div class="text">
+            <p id="underweight-text">
+              Thiếu cân<br />
+              < 18.5
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box_image">
+            <img id="healthy-image" src="" alt="" />
+          </div>
+          <div class="text">
+            <p id="healthy-text">Khỏe mạnh <br />18.5 - 24.9</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box_image">
+            <img id="overweight-image" src="" alt="" />
+          </div>
+          <div class="text">
+            <p id="overweight-text">
+              Thừa cân <br />
+              25 - 29.9
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_image">
+            <img id="obesetype1-image" src="" alt="" />
+          </div>
+          <div class="text">
+            <p id="obesetype1-text">
+              Tiểu đường type 1 <br />
+              30 - 34.9
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box_image">
+            <img id="obesetype2-image" src="" alt="" />
+          </div>
+          <div class="text">
+            <p id="obesetype2-text">
+              Tiểu đường type 2 <br />
+              > 35
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--slide-->
+   
+
+    <div class="slide-show">
+      <div class="bmi-slide">
+        <p id="bmi-box">ABC</p>
+      </div>
+    <div class="slide">
+      <div class="underweight-slide"></div>
+      <div class="healthy-slide"></div>
+      <div class="overweight-slide"></div>
+      <div class="obese1-slide"></div>
+      <div class="obese2-slide"></div>
+    </div>
+    <div class="text-slide">
+      <p>0</p>
+      <p>18.5</p>
+      <p>25</p>
+      <p>30</p>
+      <p>35+</p>
+    </div>
+
+
+    
+
+
+
+
+    <!--Solution-->
+    <section class="how" id="how" style="display: none">
+      <div class="status">
+        <div class="status-head" onclick="status_click ()">
+          <h4 id="status_text">Tình trạng</h4>
+          <img
+            src="./dropdown.png"
+            alt=""
+            style="width: 20px; height: 20px"
+            id="status-dropdown"
+          />
+        </div>
+        <p id="status">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident
+          officiis eius fuga veritatis. Saepe commodi eum neque illum fugit sit
+          maiores, eius pariatur, tenetur possimus doloribus atque unde a!
         </p>
-        <div class="container_content">
-          <div class="box">
-            <div class="box_image">
-              <img id="underweight-image" src="" alt="" />
-            </div>
-            <div class="text">
-              <p id="underweight-text">
-                Thiếu cân<br />
-                < 18.5
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box_image">
-              <img id="healthy-image" src="" alt="" />
-            </div>
-            <div class="text">
-              <p id="healthy-text">
-                Khỏe mạnh <br />18.5 - 24.9
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box_image">
-              <img id="overweight-image" src="" alt="" />
-            </div>
-            <div class="text">
-              <p id="overweight-text">
-                Thừa cân <br />
-                25 - 29.9
-              </p>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="box_image">
-              <img id="obesetype1-image" src="" alt="" />
-            </div>
-            <div class="text">
-              <p id="obesetype1-text">
-                Tiểu đường type 1 <br />
-                30 - 34.9
-              </p>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="box_image">
-              <img id="obesetype2-image" src="" alt="" />
-            </div>
-            <div class="text">
-              <p id="obesetype2-text">
-                Tiểu đường type 2 <br />
-                > 35 
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="risk">
+        <div class="risk-head" onclick="risk_click()">
+          <h4 id="risk_text">Nguy cơ</h4>
+          <img
+            src="./dropdown.png"
+            alt=""
+            style="width: 20px; height: 20px"
+            id="risk-dropdown"
+          />
         </div>
+        <p id="risk">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          dolorem distinctio alias, minima itaque, nihil dolorum sapiente omnis
+          exercitationem autem quis architecto neque asperiores illum, similique
+          repudiandae perspiciatis voluptates vel!
+        </p>
+      </div>
+      <div class="recommend">
+        <div class="recommend-head" onclick="recommend_click()">
+          <h4 id="recommend_text">Gợi ý</h4>
+          <img
+            src="./dropdown.png"
+            alt=""
+            style="width: 20px; height: 20px"
+            id="recommend-dropdown"
+          />
+        </div>
+        <p id="recommend">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+          possimus velit minus aliquam vero aut quibusdam, illo, accusantium
+          laudantium non alias, animi facilis. Voluptas, omnis atque? Nulla modi
+          ducimus enim!
+        </p>
       </div>
     </section>
 
-
-<!--Solution-->
-    <section class="how" id="how">       
-          <div class="status">
-            <div class="status-head">
-            <h4 id="status_text">Tình trạng</h4>
-            <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function status_click()"></i>
-          </div>
-            <p id="status">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident officiis eius fuga veritatis. Saepe commodi eum neque illum fugit sit maiores, eius pariatur, tenetur possimus doloribus atque unde a!</p>
-          </div>
-          <div class="risk">
-            <div class="risk-head">
-            <h4 id="risk_text">Nguy cơ</h4>
-            <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function risk_click()"></i>
-          </div>
-            <p id="risk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem distinctio alias, minima itaque, nihil dolorum sapiente omnis exercitationem autem quis architecto neque asperiores illum, similique repudiandae perspiciatis voluptates vel!</p>
-          </div>
-          <div class="recommend">
-            <div class="recommend-head">
-              <h4 id="recommend_text">Gợi ý</h4>
-              <i class="fa fa-chevron-circle-down" aria-hidden="true" onclick="function recommend_click()"></i>
-            </div>
-            <p id="recommend">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum possimus velit minus aliquam vero aut quibusdam, illo, accusantium laudantium non alias, animi facilis. Voluptas, omnis atque? Nulla modi ducimus enim!</p>
-          </div> 
-    </section>
-
-
-
-    <section class="question" id="question" style="display: none">
-      <div class="question_container">
-        <div class="regular_question">
-          <h4 style="color: #8c8c8c; font-size: 15px">
-            <span><img src="./info-icon.png" alt="" /></span> Câu hỏi thường gặp
-          </h4>
-        </div>
-        <div class="question_content" id="question_underweight">
-          <div class="question_content_box">
-            <div class="box_text">
-              <h4 id="text_icon1"></h4>
-              <i class="fal fa-plus" id="icon1"></i>
-            </div>
-            <div class="box_content" id="box_icon1" style="display: none">
-              <i id="text_content_icon1"></i>
-            </div>
-          </div>
-
-          <div class="question_content_box">
-            <div class="box_text">
-              <h4 id="text_icon2"></h4>
-              <i class="fal fa-plus" id="icon2"></i>
-            </div>
-            <div class="box_content" id="box_icon2" style="display: none">
-              <i id="text_content_icon2"></i>
-            </div>
-          </div>
-
-          <div class="question_content_box">
-            <div class="box_text">
-              <h4 id="text_icon3"></h4>
-              <i class="fal fa-plus" id="icon3"></i>
-            </div>
-            <div class="box_content" id="box_icon3" style="display: none">
-              <i id="text_content_icon3"></i>
-            </div>
-          </div>
-
-          <div class="question_content_box">
-            <div class="box_text">
-              <h4 id="text_icon4"></h4>
-              <i class="fal fa-plus" id="icon4"></i>
-            </div>
-            <div class="box_content" id="box_icon4" style="display: none">
-              <i id="text_content_icon4"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="email" id="email" style="display: none">
-      <div class="email_box">
-        <div class="email_content">
-          <div class="email_content_final">
-            <h4
-              style="
-                font-size: 25px;
-                color: rgb(56, 53, 53);
-                font-weight: 600;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                padding-top: 10px;
-              "
-            >
-              Đạt mốc cân nặng lý tưởng
-            </h4>
-            <div class="signup">
-              <h5>
-                Đăng ký nhận bản tin sức khỏe,luyện tập thể thao từ các chuyên
-                gia y tế và chuyên gia dinh dưỡng cộng tác cùng chúng tôi.
-              </h5>
-            </div>
-            <input
-              type="text"
-              placeholder="Địa chỉ email của bạn"
-              style="
-                width: 55%;
-                height: 45px;
-                border: 0.5px solid rgb(226, 226, 221);
-                border-radius: 5px;
-              "
-            />
-            <div class="btn"><button>Đăng ký</button></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--footer-->
 
     <section class="footer" style="font-family: 'Open Sans', sans-serif">
       <div class="footer_content">

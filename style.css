@@ -83,7 +83,7 @@
   font-size: 20px;
 }
 #bmi {
-  margin: 0 20%;
+  margin: 0 auto;
 }
 .icon {
   display: flex;
@@ -91,7 +91,7 @@
   justify-content: center;
   margin-bottom: 5%;
 }
-#input {
+#input1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,6 +138,10 @@ input:focus {
 .btn:hover {
   background-color: #0059fd !important;
 }
+
+#tab1 {
+  margin: 0 20%;
+}
 .tab-pane p {
   margin-top: 1% !important;
 }
@@ -177,7 +181,7 @@ input:focus {
 }
 .container .container_text {
   font-weight: 600;
-  font-size: 30px;;
+  font-size: 30px;
 }
 .container .container_content {
   display: flex;
@@ -191,12 +195,80 @@ input:focus {
   padding-left: 20%;
   padding-right: 20%;
 }
-.status-head, .risk-head, .recommend-head {
+.status-head,
+.risk-head,
+.recommend-head {
   display: flex;
+  justify-content: space-between;
+  background-color: rgb(160, 235, 253);
+  border: 1px solid white;
+  padding: 1%;
+  font-size: 15px;
 }
-.fa {
-  margin-left: 10px;
+.how img {
+  margin-left: 5px;
   margin-top: 5px;
+  cursor: pointer;
+}
+.how p {
+  background-color: rgb(234, 248, 255);
+  padding: 3%;
+  border-radius: 5px;
+  line-height: 2;
+}
+.slide-show {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 20% 0 20%;
+
+}
+.slide {
+  margin-top: 5%;
+  height: 15px;
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+}
+.underweight-slide {
+  width: 92%;
+  background-color: #509bf7;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.healthy-slide {
+  width: 32%;
+  background-color: rgb(41, 226, 57);
+}
+.overweight-slide {
+  width: 26%;
+  background-color: rgb(255, 166, 0);
+}
+.obese1-slide {
+  width: 26%;
+  background-color: rgb(255, 102, 0);
+}
+.obese2-slide {
+  width: 26%;
+  background-color: rgb(255, 60, 0);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.text-slide {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20%;
+}
+
+  .bmi-slide {
+    position: relative;
+  }
+#bmi-box {
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  background-color: red;
 }
 
 
