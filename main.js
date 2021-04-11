@@ -43,7 +43,9 @@ let recommend = document.getElementById("recommend");
 
 let getData = [
   {
-    gender = "male",
+    gender : "male",
+    bmi_min : 1,
+    bmi_max : 18.4,
     under_weight_male: "./underweight-male-blue.png",
     healthy_male: "./healthy-male-gray.png",
     overweight_male: "./overweight-male-gray.png",
@@ -57,7 +59,9 @@ let getData = [
     <br />Tiếp theo, hãy chọn các loại thức ăn và đồ uống có thể cung cấp lượng calo cao hơn mức tiêu thụ của bạn – lên đến 300-500 kcal mỗi ngày. Ví dụ, nếu nhu cầu calo hàng ngày của bạn là 1700 kcal, bạn cần tiêu thụ tổng cộng 2000-2200 kcal mỗi ngày để tăng cân.`,
   },
   {
-    gender = "male",
+    gender : "male",
+    bmi_min : 18.5,
+    bmi_max : 24.9,
     under_weight_male: "./underweight-male-gray.png",
     healthy_male: "./healthy-male-blue.png",
     overweight_male: "./overweight-maile-gray.png",
@@ -65,17 +69,19 @@ let getData = [
     obese_type2_male: "./obese-type2-male-gray.png",
     solution: "",
     status:
-      "Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi vào khoảng 18,5 đến 22,9.",
+      "Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi vào khoảng 18,5 đến 24,9.",
     risk:
       "Ngay cả những người có chỉ số BMI khỏe mạnh cũng có thể đứng trước nguy cơ mắc một số tình trạng sức khoẻ. Vì vậy, điều quan trọng là cần xây dựng một lối sống lành mạnh thông qua chế độ ăn uống thích hợp, vận động hợp lý và khám sức khỏe định kỳ để duy trì sức khỏe tốt nhất có thể.",
     recommend:
       "Nếu bạn muốn duy trì trọng lượng cơ thể, đầu tiên hãy xác định bạn cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt động hàng ngày của cơ thể. Chọn các thực phẩm và đồ uống cung cấp một lượng calo tương đương với nhu cầu calo hàng ngày của bạn. Ví dụ: Nếu nhu cầu calo hàng ngày của bạn là 1950 kcal, bạn cần tiêu thụ tổng cộng 1950 kcal mỗi ngày để duy trì cân nặng của mình.",
   },
   {
-    gender = "male",
+    gender : "male",
+    bmi_min : 25,
+    bmi_max : 29.9,
     under_weight_male: "./underweight-male-gray.png",
     healthy_male: "./healthy-male-gray.png",
-    overweight_male: "./overweight-maile-bue.png",
+    overweight_male: "./overweight-male-blue.png",
     obese_type1_male: "./obese-type1-male-gray.png",
     obese_type2_male: "./obese-type2-male-gray.png",
     solution: "",
@@ -87,10 +93,12 @@ let getData = [
     <br><strong>Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</strong> <br>Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam giới cần tới 2500 kcal mỗi ngày. Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ thể của bạn.`,
   },
   {
-    gender = "male",
+    gender : "male",
+    bmi_min : 30,
+    bmi_max : 35,
     under_weight_male: "./underweight-male-gray.png",
     healthy_male: "./healthy-male-gray.png",
-    overweight_male: "./overweight-maile-gray.png",
+    overweight_male: "./overweight-male-gray.png",
     obese_type1_male: "./obese-type1-male-blue.png",
     obese_type2_male: "./obese-type2-male-gray.png",
     solution: "",
@@ -102,10 +110,12 @@ let getData = [
     <br><strong>Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</strong> <br>Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam giới cần tới 2500 kcal mỗi ngày. Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ thể của bạn.`,
   },
   {
-    gender = "male",
+    gender : "male",
+    bmi_min : 35,
+    bmi_max : 100,
     under_weight_male: "./underweight-male-gray.png",
     healthy_male: "./healthy-male-gray.png",
-    overweight_male: "./overweight-maile-gray.png",
+    overweight_male: "./overweight-male-gray.png",
     obese_type1_male: "./obese-type1-male-gray.png",
     obese_type2_male: "./obese-type2-male-blue.png",
     solution: "",
@@ -116,7 +126,9 @@ let getData = [
     <br><strong>Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</strong> <br>Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam giới cần tới 2500 kcal mỗi ngày. Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ thể của bạn.`,
   },
   {
-    gender = "female",
+    gender : "female",
+    bmi_min : 1,
+    bmi_max : 18.4,
     under_weight_female: "./underweight-female-blue.png",
     healthy_female: "./healthy-female-gray.png",
     overweight_female: "./overweight-female-gray.png",
@@ -130,7 +142,9 @@ let getData = [
     <br />Tiếp theo, hãy chọn các loại thức ăn và đồ uống có thể cung cấp lượng calo cao hơn mức tiêu thụ của bạn – lên đến 300-500 kcal mỗi ngày. Ví dụ, nếu nhu cầu calo hàng ngày của bạn là 1700 kcal, bạn cần tiêu thụ tổng cộng 2000-2200 kcal mỗi ngày để tăng cân.`,
   },
   {
-    gender = "female",
+    gender : "female",
+    bmi_min : 18.5,
+    bmi_max : 24.9,
     under_weight_female: "./underweight-female-gray.png",
     healthy_female: "./healthy-female-blue.png",
     overweight_female: "./overweight-female-gray.png",
@@ -138,14 +152,16 @@ let getData = [
     obese_type2_female: "./obese-type2-female-gray.png",
     solution: "",
     status:
-      "Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi vào khoảng 18,5 đến 22,9.",
+      "Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi vào khoảng 18,5 đến 24,9.",
     risk:
       "Ngay cả những người có chỉ số BMI khỏe mạnh cũng có thể đứng trước nguy cơ mắc một số tình trạng sức khoẻ. Vì vậy, điều quan trọng là cần xây dựng một lối sống lành mạnh thông qua chế độ ăn uống thích hợp, vận động hợp lý và khám sức khỏe định kỳ để duy trì sức khỏe tốt nhất có thể.",
     recommend:
       "Nếu bạn muốn duy trì trọng lượng cơ thể, đầu tiên hãy xác định bạn cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt động hàng ngày của cơ thể. Chọn các thực phẩm và đồ uống cung cấp một lượng calo tương đương với nhu cầu calo hàng ngày của bạn. Ví dụ: Nếu nhu cầu calo hàng ngày của bạn là 1950 kcal, bạn cần tiêu thụ tổng cộng 1950 kcal mỗi ngày để duy trì cân nặng của mình.",
   },
   {
-    gender = "female",
+    gender : "female",
+    bmi_min : 25,
+    bmi_max : 29.9,
     under_weight_female: "./underweight-female-gray.png",
     healthy_female: "./healthy-female-gray.png",
     overweight_female: "./overweight-female-blue.png",
@@ -160,7 +176,9 @@ let getData = [
     <br><strong>Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</strong> <br>Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam giới cần tới 2500 kcal mỗi ngày. Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ thể của bạn.`,
   },
   {
-    gender = "female",
+    gender : "female",
+    bmi_min : 30,
+    bmi_max : 35,
     under_weight_female: "./underweight-female-gray.png",
     healthy_female: "./healthy-female-gray.png",
     overweight_female: "./overweight-female-gray.png",
@@ -168,14 +186,16 @@ let getData = [
     obese_type2_female: "./obese-type2-female-gray.png",
     solution: "",
     status:
-      "Bạn được xem là thừa cân nếu có chỉ số BMI nằm trong khoảng từ 25 đến 30.",
+      "Bạn được xem là béo phì cấp độ 1 nếu có chỉ số BMI nằm trong khoảng từ 30 đến 35.",
     risk:
       "Thừa cân có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2, tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan nhiễm mỡ, bệnh thận và một số bệnh ung thư.",
     recommend: `Nếu bạn muốn giảm cân, trước tiên bạn phải xác định lượng calo cần nạp mỗi ngày để thực hiện các chức năng cơ bản và các hoạt động hàng ngày của cơ thể. Tiếp theo, hãy chọn những loại thức ăn và đồ uống cung cấp ít calo hơn nhu cầu hàng ngày của bạn. Ví dụ, nếu nhu cầu calo tiêu thụ hàng ngày của bạn là 2100 kcal, hãy cố gắng giảm tổng lượng calo đó xuống 300-500 kcal. Giảm tới 500 kcal mỗi ngày sẽ giúp bạn giảm tới 0,5-1 kg cân nặng mỗi tuần.
     <br><strong>Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</strong> <br>Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam giới cần tới 2500 kcal mỗi ngày. Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ thể của bạn.`,
   },
   {
-    gender = "female",
+    gender : "female",
+    bmi_min : 35,
+    bmi_max : 100,
     under_weight_female: "./underweight-female-gray.png",
     healthy_female: "./healthy-female-gray.png",
     overweight_female: "./overweight-female-gray.png",
@@ -214,22 +234,20 @@ form.onsubmit = (e) => {
   document.getElementById("container").style.display = "block";
   document.getElementById("how").style.display = "block";
   document.getElementById("span_bmi").innerText = bmi;
-  
+
 
   for (let i = 0; i < getData.length; i++) {
 
-    if ((bmi < 18.5, getGender[0].id == getData[i].gender)) {
-      underweight_image.src = getData[0].under_weight_male;
-      healthy_image.src = getData[0].healthy_male;
-      overweight_image.src = getData[0].overweight_male;
-      obese_type1_image.src = getData[0].obese_type1_male;
-      obese_type2_image.src = getData[0].obese_type2_male;
-      status.innerHTML = getData[0].status;
-      risk.innerHTML = getData[0].risk;
-      recommend.innerHTML = getData[0].recommend;
-    }; if ((bmi < 25, getGender[0].id == "male")) {
-      
-    }
+    if (bmi > getData[i].bmi_min && bmi < getData[i].bmi_max && getGender[0].id == getData[i].gender) {
+      underweight_image.src = getData[i].under_weight_male;
+      healthy_image.src = getData[i].healthy_male;
+      overweight_image.src = getData[i].overweight_male;
+      obese_type1_image.src = getData[i].obese_type1_male;
+      obese_type2_image.src = getData[i].obese_type2_male;
+      status.innerHTML = getData[i].status;
+      risk.innerHTML = getData[i].risk;
+      recommend.innerHTML = getData[i].recommend;
+    };
   }
 };
 
