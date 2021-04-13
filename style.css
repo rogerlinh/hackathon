@@ -192,8 +192,6 @@ input:focus {
 .how {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 .status-head,
 .risk-head,
@@ -255,20 +253,35 @@ input:focus {
 }
 .text-slide {
   display: flex;
-  justify-content: space-around;
-  margin: 0 20%;
+  justify-content: flex-start;
+}
+.s185 {
+  margin-left: 42%;
+}
+.s25 {
+  margin-left: 13%;
+}
+.s30{
+  margin-left: 11%;
+}
+.s35 {
+  margin-left: 11%;
 }
 
   .bmi-slide {
     position: relative;
+    margin-bottom: 5%;
   }
 #bmi-box {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 66%, 39% 66%, 0 100%, 22% 65%, 1% 65%);
   position: absolute;
-  border-radius: 5px;
   text-align: center;
-  width: 50px;
-  height: 30px;
-  background-color: red;
+  width: 60px;
+height: 80px;
+  background-color: rgb(1, 39, 255);
+  font-weight: 800;
+  color: white;
+  padding-top: 2%;
 }
 
 

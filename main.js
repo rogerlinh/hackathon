@@ -252,22 +252,23 @@ form.onsubmit = (e) => {
     }
   }
   let width_slide = document.getElementsByClassName("underweight-slide")[0].clientWidth + document.getElementsByClassName("healthy-slide")[0].clientWidth + document.getElementsByClassName("overweight-slide")[0].clientWidth + document.getElementsByClassName("obese1-slide")[0].clientWidth + document.getElementsByClassName("obese2-slide")[0].clientWidth;
-  let a = width_slide * bmi /40;
+  let a = 100 * bmi /40;
   console.log(a);
   console.log(width_slide);
-  var t = setInterval(move, 0.01);
+  var t = setInterval(move, 0.05);
       var pos = 0;
       let bmi_box = document.getElementById("bmi-box");
+      bmi_box.innerHTML = bmi;
       function move() {
-        bmi_box.style.left = pos + 1 + "px";
+        bmi_box.style.left = pos + 1 + "%";
         if (pos >= a || pos >= width_slide) {
           clearInterval(t);
         } else {
           pos += 1;
-          bmi_box.style.left = pos + "px";
+          bmi_box.style.left = pos + "%";
           console.log(pos);
 
-        }
+        } 
       }
 };
 
