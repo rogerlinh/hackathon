@@ -234,6 +234,7 @@ form.onsubmit = (e) => {
   document.getElementById("container").style.display = "block";
   document.getElementById("how").style.display = "block";
   document.getElementById("span_bmi").innerText = bmi;
+  document.getElementById("slide-show").style.display = "block";
 
   for (let i = 0; i < getData.length; i++) {
     if (
@@ -255,7 +256,7 @@ form.onsubmit = (e) => {
   let a = 100 * bmi /40;
   console.log(a);
   console.log(width_slide);
-  var t = setInterval(move, 0.05);
+  var t = setInterval(move, 0.2);
       var pos = 0;
       let bmi_box = document.getElementById("bmi-box");
       bmi_box.innerHTML = bmi;
